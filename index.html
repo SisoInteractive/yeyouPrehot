@@ -23,126 +23,126 @@
         <!-- stamp list -->
         <div class="stamp-wrap">
             <div class="stamp stamp01">
-                <img class="stamp-mask" src="assets/images/stamp01-12.gif" alt=""/>
+                <img class="stamp-mask" src="assets/images/stamp-static-01.png" alt=""/>
                 <div class="stamp-animation">
                     <img src="" alt=""/>
                 </div>
             </div>
 
             <div class="stamp stamp02">
-                <img class="stamp-mask" src="assets/images/stamp02-13.gif" alt=""/>
+                <img class="stamp-mask" src="assets/images/stamp-static-02.png" alt=""/>
                 <div class="stamp-animation">
                     <img src="" alt=""/>
                 </div>
             </div>
 
             <div class="stamp stamp03">
-                <img class="stamp-mask" src="assets/images/stamp03-11.gif" alt=""/>
+                <img class="stamp-mask" src="assets/images/stamp-static-03.png" alt=""/>
                 <div class="stamp-animation">
                     <img src="" alt=""/>
                 </div>
             </div>
 
             <div class="stamp stamp04">
-                <img class="stamp-mask" src="assets/images/stamp04-01.gif" alt=""/>
+                <img class="stamp-mask" src="assets/images/stamp-static-04.png" alt=""/>
                 <div class="stamp-animation">
                     <img src="" alt=""/>
                 </div>
             </div>
 
             <div class="stamp stamp05">
-                <img class="stamp-mask" src="assets/images/stamp05-05.gif" alt=""/>
+                <img class="stamp-mask" src="assets/images/stamp-static-05.png" alt=""/>
                 <div class="stamp-animation">
                     <img src="" alt=""/>
                 </div>
             </div>
 
             <div class="stamp stamp06">
-                <img class="stamp-mask" src="assets/images/stamp06-08.gif" alt=""/>
+                <img class="stamp-mask" src="assets/images/stamp-static-06.png" alt=""/>
                 <div class="stamp-animation">
                     <img src="" alt=""/>
                 </div>
             </div>
 
             <div class="stamp stamp07">
-                <img class="stamp-mask" src="assets/images/stamp07-06.gif" alt=""/>
+                <img class="stamp-mask" src="assets/images/stamp-static-07.png" alt=""/>
                 <div class="stamp-animation">
                     <img src="" alt=""/>
                 </div>
             </div>
 
             <div class="stamp stamp08">
-                <img class="stamp-mask" src="assets/images/stamp08-04.gif" alt=""/>
+                <img class="stamp-mask" src="assets/images/stamp-static-08.png" alt=""/>
                 <div class="stamp-animation">
                     <img src="" alt=""/>
                 </div>
             </div>
 
             <div class="stamp stamp09">
-                <img class="stamp-mask" src="assets/images/stamp09-15.gif" alt=""/>
+                <img class="stamp-mask" src="assets/images/stamp-static-09.png" alt=""/>
                 <div class="stamp-animation">
                     <img src="" alt=""/>
                 </div>
             </div>
 
             <div class="stamp stamp10">
-                <img class="stamp-mask" src="assets/images/stamp10-03.gif" alt=""/>
+                <img class="stamp-mask" src="assets/images/stamp-static-10.png" alt=""/>
                 <div class="stamp-animation">
                     <img src="" alt=""/>
                 </div>
             </div>
 
             <div class="stamp stamp11">
-                <img class="stamp-mask" src="assets/images/stamp11-02.gif" alt=""/>
+                <img class="stamp-mask" src="assets/images/stamp-static-11.png" alt=""/>
                 <div class="stamp-animation">
                     <img src="" alt=""/>
                 </div>
             </div>
 
             <div class="stamp stamp12">
-                <img class="stamp-mask" src="assets/images/stamp12-09.gif" alt=""/>
+                <img class="stamp-mask" src="assets/images/stamp-static-12.png" alt=""/>
                 <div class="stamp-animation">
                     <img src="" alt=""/>
                 </div>
             </div>
 
             <div class="stamp stamp13">
-                <img class="stamp-mask" src="assets/images/stamp13-10.gif" alt=""/>
+                <img class="stamp-mask" src="assets/images/stamp-static-13.png" alt=""/>
                 <div class="stamp-animation">
                     <img src="" alt=""/>
                 </div>
             </div>
 
             <div class="stamp stamp14">
-                <img class="stamp-mask" src="assets/images/stamp14-07.gif" alt=""/>
+                <img class="stamp-mask" src="assets/images/stamp-static-14.png" alt=""/>
                 <div class="stamp-animation">
                     <img src="" alt=""/>
                 </div>
             </div>
 
             <div class="stamp stamp15">
-                <img class="stamp-mask" src="assets/images/stamp15-17.gif" alt=""/>
+                <img class="stamp-mask" src="assets/images/stamp-static-15.png" alt=""/>
                 <div class="stamp-animation">
                     <img src="" alt=""/>
                 </div>
             </div>
 
             <div class="stamp stamp16">
-                <img class="stamp-mask" src="assets/images/stamp16-16.gif" alt=""/>
+                <img class="stamp-mask" src="assets/images/stamp-static-16.png" alt=""/>
                 <div class="stamp-animation">
                     <img src="" alt=""/>
                 </div>
             </div>
 
             <div class="stamp stamp17">
-                <img class="stamp-mask" src="assets/images/stamp17-18.gif" alt=""/>
+                <img class="stamp-mask" src="assets/images/stamp-static-17.png" alt=""/>
                 <div class="stamp-animation">
                     <img src="" alt=""/>
                 </div>
             </div>
 
             <div class="stamp stamp18">
-                <img class="stamp-mask" src="assets/images/stamp18-14.gif" alt=""/>
+                <img class="stamp-mask" src="assets/images/stamp-static-18.png" alt=""/>
                 <div class="stamp-animation">
                     <img src="" alt=""/>
                 </div>
@@ -158,6 +158,53 @@
     </div>
 </div>
 <!-- end main -->
+
+
+<!-- injector:js -->
+<!-- page script -->
+<script src="//localhost:35729/livereload.js"></script>
+<script src="assets/scripts/jquery-2.1.3.min.js"></script>
+<!-- end page script -->
+
+<!-- less compiler -->
+<script src="assets/scripts/less.min.js"></script>
+<!-- endinjector -->
+
+<script>
+    //  when dom are full loaded, include images,
+    //  the function below will request gif images,
+    //  when images each are self loaded, insert it to dom.
+    var app = {
+        createImages: function (){
+            var imageAmounts = 18;
+
+            for (var i = 1; i <= imageAmounts; i++)
+            {
+                //  create stamp img object, make cache in browser
+                var img = new Image(),
+                    imgIndex = i < 10 ? '0' + i :  i;
+                img.src = 'assets/images/stamp' + imgIndex + '.gif';
+                img.index = imgIndex;
+
+                //  insert image to dom when it has loaded
+                img.onload = function (){
+                    $('.stamp' + this.index).find('.stamp-animation img').attr('src', this.src);
+                    $('.stamp' + this.index).find('.stamp-animation').show();
+                };
+            }
+        },
+
+
+        run: function (){
+            app.createImages();
+        }
+    };
+
+    $(window).load(function() {
+        //  app run
+        app.run();
+    });
+</script>
 
 </body>
 </html>
