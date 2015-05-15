@@ -82,7 +82,7 @@ module.exports = function (grunt){
         // uglify可以将src定义的多个js files合成一个js file, 但这种合并顺序我们无法控制, 所以关于合并js文件的步骤需要手动去做
         uglify: {
             build: {
-                //src:['assets/scripts/*.js', '!assets/scripts/less.min.js', '!assets/scripts/jquery-2.1.3.min.js'],
+                //src:['assets/scripts/*.js', '!assets/scripts/less.min.js', '!assets/scripts/jquery-1.8.3.min.js'],
                 //dest:'dist/assets/scripts/main.min.js'
             }
         },
